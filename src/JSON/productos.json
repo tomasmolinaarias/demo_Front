@@ -1,0 +1,98 @@
+[
+  {
+    "store": "falabella",
+    "name": "Terciado Estructural pino 12 mm 122 x 244 cm ",
+    "price": "$  19.990",
+    "date": "2022-05-30T00:00:00.000Z"
+  },
+  {
+    "store": "falabella",
+    "name": "OSB 11MM 1.22X2.44MT IMPORT AZUL",
+    "price": "$  16.990",
+    "date": "2022-05-30T00:00:00.000Z"
+  },
+  {
+    "store": "constructor31",
+    "name": "OSB 11MM 1.22X2.44MT IMPORT AZUL",
+    "price": "$13.990",
+    "date": "2022-05-30T00:00:00.000Z"
+  },
+  {
+    "store": "constructor31",
+    "name": "Terciado Estructural pino 12 mm 122 x 244 cm ",
+    "price": "$16.990",
+    "date": "2022-05-30T00:00:00.000Z"
+  },
+  {
+    "store": "falabella",
+    "name": "OSB estructural 11 mm 122 x 244 cm",
+    "price": "$  17.990",
+    "date": "2022-06-30T00:00:00.000Z"
+  },
+  {
+    "store": "falabella",
+    "name": "Terciado Estructural pino 12 mm 122 x 244 cm ",
+    "price": "$20.990",
+    "date": "2022-06-30T00:00:00.000Z"
+  },
+  {
+    "store": "constructor31",
+    "name": "Terciado Estructural pino 12 mm 122 x 244 cm",
+    "price": "$18.990",
+    "date": "2022-06-30T00:00:00.000Z"
+  },
+  {
+    "store": "constructor31",
+    "name": "OSB 11MM 1.22X2.44MT IMPORT AZUL",
+    "price": "$14.990",
+    "date": "2022-06-30T00:00:00.000Z"
+  },
+  {
+    "store": "falabella",
+    "name": "OSB 11MM 1.22X2.44MT IMPORT AZUL",
+    "price": "$18.990",
+    "date": "2022-07-30T00:00:00.000Z"
+  },
+  {
+    "store": "falabella",
+    "name": "Terciado Estructural pino 12 mm 122 x 244 cm ",
+    "price": "$21.990",
+    "date": "2022-07-30T00:00:00.000Z"
+  },
+  {
+    "store": "constructor31",
+    "name": "OSB 11MM 1.22X2.44MT IMPORT AZUL",
+    "price": "$15.950",
+    "date": "2022-07-30T00:00:00.000Z"
+  },
+  {
+    "store": "constructor31",
+    "name": "Terciado Estructural pino 12 mm 122 x 244 cm ",
+    "price": "$19.990",
+    "date": "2022-07-30T00:00:00.000Z"
+  },
+  {
+    "store": "falabella",
+    "name": "Terciado Estructural pino 12 mm 122 x 244 cm ",
+    "price": "$  22.990  ",
+    "date": "2022-8-6"
+  },
+  {
+    "store": "constructor31",
+    "name": "TERCIADO ESTRUCTURAL 15MM 1.22X2.44mt DESCALIBRADO",
+    "price": "$21.990",
+    "date": "2022-8-6"
+  },
+  {
+    "store": "falabella",
+    "name": "OSB estructural 11 mm 122 x 244 cm",
+    "price": "$ 19.120",
+    "date": "2022-8-6"
+  },
+  {
+    "store": "constructor31",
+    "name": "OSB 11MM 1.22X2.44MT IMPORT AZUL",
+    "price": "$16.950",
+    "date": "2022-8-6"
+  }
+]
