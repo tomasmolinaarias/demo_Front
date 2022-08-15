@@ -3,7 +3,7 @@ import * as FaIcons from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar bg-light">
+    <div className="sidebar bg-light ">
       <ul>
         <li>
           <NavLink

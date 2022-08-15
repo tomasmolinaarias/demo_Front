@@ -1,26 +1,23 @@
 import * as FaIcons from "react-icons/fa";
-import React from "react"
-import { useEffect, useState } from "react"
-import { prom } from './calculo'
-import { getAllProducts } from '../../services/products'
+import React from "react";
+import { useEffect, useState } from "react";
+import { prom } from "./calculo";
+import { getAllProducts } from "../../services/products";
 
-const urlApiProducts = "https://app-scraping1.herokuapp.com/api/v1/product"
+const urlApiProducts = "https://app-scraping1.herokuapp.com/api/v1/product";
 
 export const CardPromedio = () => {
-  const [averageOsb, setAverageOsb] = useState(0)
-  const [averageTerciado, setAverageTerciado] = useState(0)
-  // const [variationOsb, setVariationOsb] = useState(0)
+  const [averageOsb, setAverageOsb] = useState(0);
+  const [averageTerciado, setAverageTerciado] = useState(0);
 
   useEffect(() => {
     getAllProducts(urlApiProducts).then((data) => {
-      const promedioOsb = prom(data, 'OSB', 3)
-      const promedioTerciado = prom(data, 'TERCIADO', 8)
-      setAverageOsb(promedioOsb)
-      setAverageTerciado(promedioTerciado)
-      // setVariationOsb(varacionObs)
-    })
-  }, [])
-  
+      const promedioOsb = prom(data, "OSB", 3);
+      const promedioTerciado = prom(data, "TERCIADO", 8);
+      setAverageOsb(promedioOsb);
+      setAverageTerciado(promedioTerciado);
+    });
+  }, []);
 
   return (
     <div className="row">
@@ -31,7 +28,10 @@ export const CardPromedio = () => {
             Promedio OSB
           </h5>
           <div className="card-body">
-            <div className="card-text" id="averageOne">{`$ ${new Intl.NumberFormat("de-DE").format(averageOsb)}`}</div>
+            <div
+              className="card-text"
+              id="averageOne"
+            >{`$ ${new Intl.NumberFormat("de-DE").format(averageOsb)}`}</div>
           </div>
         </div>
       </div>
@@ -43,7 +43,12 @@ export const CardPromedio = () => {
             Promedio Terciado
           </h5>
           <div className="card-body">
-            <div className="card-text" id="averageTwo">{`$ ${new Intl.NumberFormat("de-DE").format(averageTerciado)}`}</div>
+            <div
+              className="card-text"
+              id="averageTwo"
+            >{`$ ${new Intl.NumberFormat("de-DE").format(
+              averageTerciado
+            )}`}</div>
           </div>
         </div>
       </div>

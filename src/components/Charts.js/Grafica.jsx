@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import "../../App.scss";
 import * as FaIcons from "react-icons/fa";
 
-import { Product1 } from "./Product1.jsx";
-import { ProductDos } from "./Producto2.jsx";
+import { GraficaPromedial } from "./GraficaPromedial.jsx";
+import { GraficoNormal } from "./GraficoNormal";
 
 const urlApiProducts = "https://app-scraping1.herokuapp.com/api/v1/product";
 
@@ -35,33 +35,44 @@ export const Grafica = () => {
 
   return (
     <div>
-      <div className="text-center  mt-4 mb-1">
-        <h3>
-          Click para cambiar de producto:{"  "}
-          {Btn ? (
-            <span
-              className="customButton"
-              onClick={() => cambioDeProduct()}
-            >
-              Terciado
-              <FaIcons.FaExchangeAlt className="ms-3" />
-            </span>
-          ) : (
-            <span
-              className="customButton"
-              onClick={() => cambioButton()}
-            >
-              OSB
-              <FaIcons.FaExchangeAlt className="ms-3" />
-            </span>
-          )}
+      <div className="text-center mt-3 mb-3">
+        {Producto2 ? (
+          <h1>Precios Actuales</h1>
+        ) : (
+          <h1>Promedio por producto de cada mes </h1>
+        )}
+        <h3 className="d-none d-md-block mb-4 mt-4">
+          Click para cambiar el Grafico:
         </h3>
+        {Btn ? (
+          <span className="customButton h5 " onClick={() => cambioDeProduct()}>
+            Grafico Normal
+            <FaIcons.FaExchangeAlt className="ms-3" />
+          </span>
+        ) : (
+          <span className="customButton h5 " onClick={() => cambioButton()}>
+            Grafico Promediado
+            <FaIcons.FaExchangeAlt className="ms-3" />
+          </span>
+        )}
       </div>
-      {Producto2 ? (
-        <ProductDos products={Products} />
-      ) : (
-        <Product1 products={Products} />
-      )}
+      <div
+        id="carouselExampleSlidesOnly"
+        className="carousel  mt-4"
+        data-bs-ride="carousel "
+      >
+        <div className="carousel-inner text-center">
+          <div className="carousel-item  active">
+            <div className="d-block ">
+              {Producto2 ? (
+                <GraficoNormal products={Products} />
+              ) : (
+                <GraficaPromedial products={Products} />
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
