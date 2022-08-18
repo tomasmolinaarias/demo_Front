@@ -23,17 +23,18 @@ $gray: #e7e9eb;
   color: white;
 }
 .sidebar {
-  width: 14rem;
-  height: calc(100vh - 52px);
-  border-right: 1px solid$gray;
-  /*   min-height: 100%; */
-  /*   margin-top: auto; */
+  width: 15rem;
+  height: auto; /* calc(100vh - 52px); */
+  border-right: 1.5px solid$gray;
+
   ul {
     list-style: none;
     padding: 2rem 0.5rem;
     bottom: 0;
-
     li {
+      list-style-type: none;
+      position: relative;
+      width: 80%;
       a {
         text-decoration: none;
         &.active {
@@ -70,7 +71,9 @@ $gray: #e7e9eb;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .carousel {
-  max-width: 70%;
+  min-width: 70%;
+  max-width: 80%;
   display: block;
   margin: auto;
+  height: auto;
 }
